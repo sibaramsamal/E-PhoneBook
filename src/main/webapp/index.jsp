@@ -8,8 +8,10 @@
 <link rel="stylesheet" href="Common-Resources/style.css">
 </head>
 <body>
+	<%@include file="Common-Resources/nav-bar.jsp" %>
 	<div class="container">
 		<h1>Welcome to E-PhoneBook Application</h1>
 	</div>
+	<%@include file="Common-Resources/footer.jsp" %>
 </body>
 </html>
