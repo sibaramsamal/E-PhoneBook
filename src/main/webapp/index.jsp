@@ -10,7 +10,14 @@
 <body>
 	<%@include file="Common-Resources/nav-bar.jsp" %>
 	<div class="container">
-		<h1>Welcome to E-PhoneBook Application</h1>
+		<div class="left-section">
+			<h1>Welcome to <br><span>Online PhoneBook Application</span></h1><br>
+			<p>A reliable and trust worthy portal where <br>
+			you can store and access all your contacts, manage from wherever you want from.
+		</div>
+		<div class="right-section">
+			<img id="main-image" src="images/main dp.jpeg">
+		</div>
 	</div>
 	<%@include file="Common-Resources/footer.jsp" %>
 </body>

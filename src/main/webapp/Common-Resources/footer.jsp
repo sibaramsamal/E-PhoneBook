@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div class="footer">
-		<h2 class="text-center">Designed and developed by Sibaram Samal</h2>
+		<h2>Designed and developed by Sibaram Samal</h2>
 	</div>
 </body>
 </html>
