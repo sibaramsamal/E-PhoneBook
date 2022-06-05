@@ -13,13 +13,13 @@
 			<h1>E-PhoneBook</h1>
 		</div>
 		<div class="menu">
-			<a href="">Home</a>
-			<a href="">Add contact</a>
-			<a href="">View Contact</a>
+			<a href="index.jsp">Home</a>
+			<a href="add-contact.jsp">Add contact</a>
+			<a href="view-contacts.jsp">View Contact</a>
 		</div>
 		<div class="buttons">
-			<button>Login</button>
-			<button>Register</button>
+			<a class="btn" href="user-login.jsp">Login</a>
+			<a class="btn" href="user-register.jsp">Register</a>
 		</div>
 	</div>
 </body>
