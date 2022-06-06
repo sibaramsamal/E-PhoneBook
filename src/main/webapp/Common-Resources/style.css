@@ -53,20 +53,21 @@
 .btn {
 	width: 150px;
 	height: 35px;
-	text-align: center; background-color : #1ee2f2;
+	text-align: center;
+	background-color: #1ee2f2;
 	border: 2px solid #0cc5d3;
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 20px;
 	padding: 5px 0;
-	color: white;
+	color: black;
 	box-sizing: border-box;
 	background-color: #1ee2f2;
 }
 
 .btn:hover {
 	background-color: #48e8f4;
-	color: black;
+	color: white;
 }
 
 .container {
@@ -105,25 +106,50 @@ p {
 	left: 50%;
 	transform: translate(-50%,-50%);
 } */
+form {
+	border: 2px solid black;
+	border-radius: 11px;
+	height: 350px;
+	width: 343px;
+	margin-left: 130px;
+	padding-top: 20px;
+	font-size: 15px;
+}
 
-.btn-form{
-	width: 100px;
-	height: 25px;
-	text-align: center; 
-	background-color : #1ee2f2;
+input {
+	width: 80%;
+	height: 37px;
+	border-radius: 8px;
+	margin: 9px 0;
+	padding: 0 11px;
+	font-size: 15px;
+}
+
+form h1 {
+	margin-bottom: 5px;
+}
+
+.btn-form {
+	height: 35px;
+	width: auto; text-align : center;
+	background-color: #1ee2f2;
 	border: 2px solid #0cc5d3;
 	border-radius: 10px;
 	font-weight: bold;
-	font-size: 10px;
-	padding: 5px 0;
-	color: white;
+	font-size: 15px;
+	padding: 8px auto;
+	margin: 5px 5px;
+	color: black;
 	box-sizing: border-box;
 	background-color: #1ee2f2;
+	text-align: center;
 }
-.btn-form:hover{
+
+.btn-form:hover {
 	background-color: #48e8f4;
-	color: black;
+	color: white;
 }
+
 .footer {
 	height: 35px;
 	text-align: center;

@@ -7,21 +7,16 @@
 <title>add-new-contat page</title>
 <link rel="stylesheet" href="Common-Resources/style.css">
 <style type="text/css">
-.container{
-	justify-content: space-between;
-}
-.right-section img {
-	width: 800px;
-	margin-right: 70px;
-}
-
-form {
-	border: 2px solid black;
-	border-radius: 11px;
-	height: 256px;
-	width: 343px;
-	margin-left: 130px;
-}
+	.container{
+		justify-content: space-between;
+	}
+	form{
+		height: 350px;
+	}
+	.right-section img {
+		width: 800px;
+		margin-right: 70px;
+	}
 </style>
 </head>
 <body>
@@ -30,10 +25,10 @@ form {
 		<div class="left-section">
 			<form action="/add-contact" method="post">
 				<h1>Add new Contact</h1>
-				<input type="text" name="c-name" placeholder="Enter contact name"><br>
-				<input type="email" name="mail" placeholder="Enter mail-ID"><br>
-				<input type="text" name="number" placeholder="Enter phone no."><br>
-				<input type="text" name="about" placeholder="Additional details"><br>
+				<input type="text" name="c-name" placeholder="Enter contact name" required="true"><br>
+				<input type="email" name="mail" placeholder="Enter mail-ID" required="true"><br>
+				<input type="text" name="number" placeholder="Enter phone no." required="true"><br>
+				<input type="text" name="about" placeholder="Additional details" required="true"><br>
 				<input type="submit" class="btn-form" value="Save Contact"> 
 				<input type="reset" class="btn-form" value="Cancel">
 			</form>

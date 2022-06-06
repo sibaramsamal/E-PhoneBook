@@ -13,7 +13,10 @@
 	.right-section img {
 	width: 800px;
 	margin-right: 70px;
-}
+	}
+	form{
+		height: 250px;
+	}
 </style>
 </head>
 <body>
@@ -21,11 +24,15 @@
 	<div class="container">
 		<div class="left-section">
 			<form action="/login" method="post">
-			
+				<h1>Login Form</h1>
+				<input type="email" name="user-id" placeholder="Enter your Mail ID">
+				<input type="password" name="pass" placeholder="Enter your password">
+				<input type="submit" class="btn-form" value="Login">
+				<input type="reset" class="btn-form" value="Cancel">
 			</form>
 		</div>
 		<div class="right-section">
-			<image src="images/login-register.svg">
+			<img src="images/login-register.svg">
 		</div>
 	</div>
 	<%@include file="Common-Resources/footer.jsp" %>
