@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>add-new-contat page</title>
+<title>add-new-contact page</title>
 <link rel="stylesheet" href="Common-Resources/style.css">
 <style type="text/css">
 	.container{
@@ -23,7 +23,7 @@
 	<%@include file="Common-Resources/nav-bar.jsp"%>
 	<div class="container">
 		<div class="left-section">
-			<form action="/add-contact" method="post">
+			<form action="add-contact" method="post">
 				<h1>Add new Contact</h1>
 				<input type="text" name="c-name" placeholder="Enter contact name" required="true"><br>
 				<input type="email" name="mail" placeholder="Enter mail-ID" required="true"><br>

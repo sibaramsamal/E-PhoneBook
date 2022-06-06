@@ -23,8 +23,17 @@
 	<%@include file="Common-Resources/nav-bar.jsp" %>
 	<div class="container">
 		<div class="left-section">
-			<form action="/login" method="post">
+			<form action="login" method="post">
 				<h1>Login Form</h1>
+				<%
+					String msg = (String)ss.getAttribute("err-msg");
+					if(msg != null){
+				%>
+					<h4 class="txt-danger"><%= msg %></h4>
+				<%
+					ss.removeAttribute("err-msg");
+					}
+				%>
 				<input type="email" name="user-id" placeholder="Enter your Mail ID">
 				<input type="password" name="pass" placeholder="Enter your password">
 				<input type="submit" class="btn-form" value="Login">

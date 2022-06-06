@@ -149,7 +149,12 @@ form h1 {
 	background-color: #48e8f4;
 	color: white;
 }
-
+.txt-danger{
+	color: red;
+}
+.txt-green{
+	color: green;
+}
 .footer {
 	height: 35px;
 	text-align: center;

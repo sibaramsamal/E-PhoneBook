@@ -1,0 +1,13 @@
+CREATE TABLE `e-phonebook`.`user` (
+  `uid` INT NOT NULL AUTO_INCREMENT,
+  `uname` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`uid`));
+
+CREATE TABLE `e-phonebook`.`contact` (
+  `cid` INT NOT NULL AUTO_INCREMENT,
+  `cname` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NULL,
+  `details` VARCHAR(45) NULL,
+  PRIMARY KEY (`cid`));
