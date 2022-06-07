@@ -34,7 +34,6 @@ public class RegistrationServlet extends HttpServlet{
 		else {
 			HttpSession ses = req.getSession();
 			ses.setAttribute("fail-msg", "Something gone wrong !!! ");
-			ses.removeAttribute("err-msg");
 		}
 		res.sendRedirect("user-register.jsp");
 	}

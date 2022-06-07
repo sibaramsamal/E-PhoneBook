@@ -1,19 +1,27 @@
 package com.controllers;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet("/logout")
-public class LogoutServlet extends HttpServlet{
+import com.dao.ContactDAO;
+
+@WebServlet("/delete")
+public class DeleteContact extends HttpServlet {
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws IOException {
-		HttpSession ss = req.getSession();
-		ss.removeAttribute("user");
-		res.sendRedirect("index.jsp");
+		int sid = Integer.parseInt(req.getParameter("id"));
+		ContactDAO dao = new ContactDAO();
+		boolean b = false;
+		try {
+			b = dao.deleteContact(sid);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		res.sendRedirect("view-contacts.jsp");
 	}
 	public void doGet(HttpServletRequest req, HttpServletResponse res) throws IOException {
 		doPost(req,res);

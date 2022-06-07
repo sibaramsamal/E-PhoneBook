@@ -4,7 +4,6 @@
 	font-family: sans-serif;
 	list-style: none;
 	text-decoration: none;
-	box-sizing: border-box;
 }
 
 .nav_bar {
@@ -13,6 +12,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	z-index: 1;
 }
 
 .logo {
@@ -155,6 +155,38 @@ form h1 {
 .txt-green{
 	color: green;
 }
+.card{
+	width: 250px;
+	height: 200px;
+	border-radius: 10px;
+	border: 1px solid #0cc5d3;
+	background-color: white;
+	box-shadow: 2px 2px 3px black;
+	
+}
+.btn-crd-green{
+		width: 50px;
+		height: auto;
+		padding: 5px;
+		margin: 10px 10px;
+		border: 2px solid green;
+		background-color: green;
+		color: white;
+		border-radius: 3px;
+	}
+	.btn-crd-red{
+		width: 70px;
+		height: auto;
+		padding: 5px;
+		margin: 10px 10px;
+		border: 2px solid red;
+		background-color: red;
+		color: white;
+		border-radius: 3px;
+	}
+	.btns{
+		margin-top: 50px;
+	}
 .footer {
 	height: 35px;
 	text-align: center;

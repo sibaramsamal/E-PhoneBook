@@ -23,7 +23,6 @@
 			<form action="register" method="post">
 			<h1>Registration Form</h1>
 			<%
-				HttpSession ss = request.getSession();
 				String successMsg = (String)ss.getAttribute("suc-msg");
 				if(successMsg != null){
 			%>
@@ -34,7 +33,7 @@
 			%>
 			<%
 				HttpSession ses = request.getSession();
-				String errorMessage = (String)ss.getAttribute("fail-msg");
+				String errorMessage = (String)ses.getAttribute("fail-msg");
 				if(errorMessage != null){
 			%>
 				<h3 class="txt-danger"><%= errorMessage %></h3>

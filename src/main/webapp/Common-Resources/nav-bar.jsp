@@ -18,27 +18,29 @@
 		User u = (User) ss.getAttribute("user");
 		if (u == null) {
 		%>
-			<div class="menu">
-				<a href="index.jsp">Home</a> <a href="add-contact.jsp">Add
-					contact</a> <a href="view-contacts.jsp">View Contact</a>
-			</div>
-			<div class="buttons">
-				<a class="btn" href="user-login.jsp">Login</a> 
-				<a class="btn" href="user-register.jsp">Register</a>
-			</div>
+		<div class="menu">
+			<a href="index.jsp">Home</a> <a href="add-contact.jsp">Add
+				contact</a> <a href="view-contacts.jsp">View Contact</a>
+		</div>
+		<div class="buttons">
+			<a class="btn" href="user-login.jsp">Login</a> 
+			<a class="btn" href="user-register.jsp">Register</a>
+		</div>
 		<%
-		} else {
+		}
+		if (u != null) {
 		%>
 			<div class="menu">
 				<a href="index.jsp">Home</a> <a href="add-contact.jsp">Add
 					contact</a> <a href="view-contacts.jsp">View Contact</a>
 			</div>
 			<div class="buttons">
-				<h3><%=u.getUname()%></h3>
+				<h2><%=u.getUname()%></h2>
 				<a class="btn" href="logout">Logout</a>
+			</div>
 			<%
 			}
 			%>
-		</div>
+	</div>
 </body>
 </html>

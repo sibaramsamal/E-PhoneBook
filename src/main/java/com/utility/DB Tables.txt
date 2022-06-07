@@ -9,5 +9,16 @@ CREATE TABLE `e-phonebook`.`contact` (
   `cid` INT NOT NULL AUTO_INCREMENT,
   `cname` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
+  `phone` VARCHAR(45) NULL,
   `details` VARCHAR(45) NULL,
+  `sid` INT,
   PRIMARY KEY (`cid`));
+
+  
+  Database name: e-phonebook
+  tables:
+  	1. user
+  	2. contact
+  DB username: "root"
+  DB password: ""
+  Driver required: mysql connector jar

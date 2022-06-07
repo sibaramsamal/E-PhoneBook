@@ -7,12 +7,20 @@ public class Contact {
 	String cmail;
 	String about;
 	
-	public Contact(String cname, String phone, String cmail, String about) {
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
+	}
+	public Contact(String cname, String cmail, String phone, String about) {
 		super();
 		this.cname = cname;
 		this.phone = phone;
 		this.cmail = cmail;
 		this.about = about;
+	}
+	public Contact() {
 	}
 	public String getCname() {
 		return cname;
