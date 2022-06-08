@@ -27,6 +27,12 @@
 		margin-top: 50px;
 		text-align: center;	
 	}
+	#msg{
+		background-color: #00c4c447;
+		text-align: center;
+		height: 43px;
+		padding-top: 10px;
+	}	
 </style>
 </head>
 <body>
@@ -40,15 +46,18 @@
 			ContactDAO dao = new ContactDAO();
 			List<Contact> l = dao.getContacts(u.getUid());
 	%>
-	<div class="container">
+	<div id="edit-msg">
 	<%
 		String successMsg = (String)ss.getAttribute("suc-msg-edt");
 		if(successMsg != null){
 			%>
-				<h1 class="txt-green"><%= successMsg %></h1>
+				<h3 id="msg" class="txt-green"><%= successMsg %></h3>
 			<%
 			ss.removeAttribute("suc-msg-edt");
 		}
+	%>
+	<div class="container">
+	<%
 		for(Contact c : l){
 		%>
 			<div class="card">
@@ -68,5 +77,6 @@
 	<%
 		}
 	%>
+	</div>
 </body>
 </html>
